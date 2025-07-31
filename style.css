@@ -1,0 +1,114 @@
+/* Quirky cat vibes for your eyes only */
+body {
+  background: #fff8e1;
+  color: #3e2723;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  user-select: none;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  color: #d84315;
+  text-shadow: 1px 1px 0 #ffccbc;
+  cursor: default;
+}
+
+header p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0.1em;
+  font-style: italic;
+  color: #6d4c41;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 1em auto 2em;
+  padding: 0.8em 1.2em;
+  font-size: 1rem;
+  background: #6d4c41;
+  color: #fff8e1;
+  border: 2px solid #d84315;
+  border-radius: 0.8em;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #bf360c;
+}
+
+.code-list {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 1em;
+}
+
+.code-btn {
+  background: #ffcc80;
+  border: 3px solid #d84315;
+  border-radius: 1em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1em 0;
+  color: #4e342e;
+  text-shadow: 0 1px 0 #fff3e0;
+  box-shadow:
+    0 4px 6px rgba(0,0,0,0.2),
+    inset 0 -3px 0 #d84315;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.3s;
+  user-select: none;
+  position: relative;
+}
+
+.code-btn:hover {
+  background: #ffb74d;
+  transform: translateY(-5px) rotate(-2deg);
+  box-shadow:
+    0 10px 15px rgba(0,0,0,0.3),
+    inset 0 -3px 0 #bf360c;
+}
+
+.code-btn::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -2.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d84315;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 0.4em;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  user-select: none;
+  font-family: 'Arial', sans-serif;
+  text-shadow: none;
+}
+
+.code-btn:hover::after {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #6d4c41;
+  font-style: italic;
+  user-select: none;
+}

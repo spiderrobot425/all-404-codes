@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Error {{CODE}} - {{TITLE}} 🐱</title>
+  <style>
+    body {
+      background: #fff8e1;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 2em;
+      color: #3e2723;
+      user-select: none;
+    }
+    img {
+      max-width: 60vw;
+      border: 6px solid #d84315;
+      border-radius: 1em;
+      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+      margin-top: 1em;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-top: 0.5em;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 0.3em;
+      font-style: italic;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a {
+      color: #d84315;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 2em;
+      font-size: 1.2rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Error {{CODE}} - {{TITLE}} 🐱</h1>
+  <img src="{{IMAGE_PATH}}" alt="Cat for error {{CODE}}" />
+  <p>{{MESSAGE}}</p>
+  <a href="/">⬅️ Back to home</a>
+</body>
+</html>

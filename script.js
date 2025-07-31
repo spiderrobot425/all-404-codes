@@ -42,7 +42,7 @@ const toggleBtn = document.getElementById("toggle-mode");
 let useStatusPath = false;
 
 // Replace this with your actual domain URL
-const baseDomain = 'https://spiderrobot425.github.io/';
+const baseDomain = 'https://spiderrobot425.github.io/all-404-codes/';
 
 function buildButtons() {
   list.innerHTML = ''; // Clear old buttons
